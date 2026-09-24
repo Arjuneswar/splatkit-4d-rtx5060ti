@@ -1,0 +1,26 @@
+=== TRAINING/WORKFLOW EVENT at 14:32:25 ===
+[2026-09-16 14:23:42.501] [SplatKit] exported 64259 gaussians (64259 visible)
+[2026-09-16 14:24:05.415] [SplatKit] exported 63904 gaussians (63904 visible)
+[2026-09-16 14:24:28.323] [SplatKit] exported 63574 gaussians (63574 visible)
+[2026-09-16 14:24:51.233] [SplatKit] exported 63159 gaussians (63159 visible)
+[2026-09-16 14:25:14.127] [SplatKit] exported 62810 gaussians (62810 visible)
+[2026-09-16 14:25:36.980] [SplatKit] exported 62453 gaussians (62453 visible)
+[2026-09-16 14:25:59.838] [SplatKit] exported 62155 gaussians (62155 visible)
+[2026-09-16 14:26:22.719] [SplatKit] exported 61805 gaussians (61805 visible)
+[2026-09-16 14:26:45.555] [SplatKit] exported 61489 gaussians (61489 visible)
+[2026-09-16 14:27:08.391] [SplatKit] exported 61199 gaussians (61199 visible)
+[2026-09-16 14:27:31.210] [SplatKit] exported 60917 gaussians (60917 visible)
+[2026-09-16 14:27:54.099] [SplatKit] exported 60623 gaussians (60623 visible)
+[2026-09-16 14:28:17.133] [SplatKit] exported 60294 gaussians (60294 visible)
+[2026-09-16 14:28:39.906] [SplatKit] exported 59975 gaussians (59975 visible)
+[2026-09-16 14:29:02.615] [SplatKit] exported 59643 gaussians (59643 visible)
+[2026-09-16 14:29:25.205] [SplatKit] exported 59227 gaussians (59227 visible)
+[2026-09-16 14:29:48.356] [SplatKit] exported 58779 gaussians (58779 visible)
+[2026-09-16 14:30:12.041] [SplatKit] exported 58393 gaussians (58393 visible)
+[2026-09-16 14:30:34.666] [SplatKit] exported 58047 gaussians (58047 visible)
+[2026-09-16 14:30:57.086] [SplatKit] exported 57671 gaussians (57671 visible)
+[2026-09-16 14:31:19.795] [SplatKit] exported 57299 gaussians (57299 visible)
+[2026-09-16 14:31:42.353] [SplatKit] frame  120  warm   400 it   0.38 min  gaussians    56954  cleaned opacity 42, needle 274, speck 29  advected 0 moved, 57299 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:31:42.598] [SplatKit] exported 56954 gaussians (56954 visible)
+[2026-09-16 14:31:46.367] [SplatKit] preview clip -> C:\Users\HP\Apps\ComfyUI\output\my_shot\preview.mp4
+[2026-09-16 14:31:46.370] [SplatKit] done: 121 frame(s) in 95.3 min -> C:\Users\HP\Apps\ComfyUI\output\my_shot

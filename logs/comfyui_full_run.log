@@ -1,0 +1,719 @@
+[2026-09-15 17:07:45.747] ** ComfyUI startup time: 2026-09-15 17:07:45.747
+[2026-09-15 17:07:45.747] ** Platform: Windows
+[2026-09-15 17:07:45.748] ** Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]
+[2026-09-15 17:07:45.748] ** Python executable: C:\Users\HP\anaconda3\envs\comfyui\python.exe
+[2026-09-15 17:07:45.748] ** ComfyUI Path: C:\Users\HP\Apps\ComfyUI
+[2026-09-15 17:07:45.748] ** ComfyUI Base Folder Path: C:\Users\HP\Apps\ComfyUI
+[2026-09-15 17:07:45.749] ** User directory: C:\Users\HP\Apps\ComfyUI\user
+[2026-09-15 17:07:45.749] ** ComfyUI-Manager config path: C:\Users\HP\Apps\ComfyUI\user\__manager\config.ini
+[2026-09-15 17:07:45.749] ** Log path: C:\Users\HP\Apps\ComfyUI\user\comfyui.log
+[2026-09-15 17:07:47.671]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\rgthree-comfy
+[2026-09-15 17:07:47.672]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-easy-use
+[2026-09-15 17:07:47.672]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-Trellis2-GGUF
+[2026-09-15 17:07:47.672]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit
+[2026-09-15 17:07:47.673]    4.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-manager
+[2026-09-15 17:07:47.673] 
+[2026-09-15 17:07:50.394] WARNING: You need pytorch with cu130 or higher to use optimized CUDA operations.
+[2026-09-15 17:07:50.394] Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'gemv_awq_w4a16', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_svdquant_w4a4', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[2026-09-15 17:07:50.394] Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'gemv_awq_w4a16', 'int8_linear', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[2026-09-15 17:07:50.394] Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+[2026-09-15 17:07:50.395] Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+[2026-09-15 17:07:50.402] Checkpoint files will always be loaded safely.
+[2026-09-15 17:07:50.497] Total VRAM 16311 MB, total RAM 65315 MB
+[2026-09-15 17:07:50.497] pytorch version: 2.10.0+cu128
+[2026-09-15 17:07:50.498] Set vram state to: NORMAL_VRAM
+[2026-09-15 17:07:50.498] Device: cuda:0 NVIDIA GeForce RTX 5060 Ti : cudaMallocAsync
+[2026-09-15 17:07:50.513] Using async weight offloading with 2 streams
+[2026-09-15 17:07:50.513] Enabled pinned memory 26126.0
+[2026-09-15 17:07:50.569] working around nvidia conv3d memory bug.
+[2026-09-15 17:07:50.580] Using pytorch attention
+[2026-09-15 17:07:54.799] aimdo: src-win/cuda-detour.c:38:INFO:aimdo_setup_hooks: installing 6 hooks
+[2026-09-15 17:07:54.833] aimdo: src/control.c:262:INFO:comfy-aimdo NVML pressure enabled
+[2026-09-15 17:07:54.848] aimdo: src-win/shmem-detect.c:80:INFO:comfy-aimdo WDDM adapter match: NVIDIA GeForce RTX 5060 Ti runtime_luid=00000000:0000d663 dxgi_luid=00000000:0000d663
+[2026-09-15 17:07:54.849] aimdo: src/control.c:277:INFO:comfy-aimdo inited for GPU: NVIDIA GeForce RTX 5060 Ti (VRAM: 16310 MB)
+[2026-09-15 17:07:54.849] DynamicVRAM support detected and enabled
+[2026-09-15 17:07:54.849] Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]
+[2026-09-15 17:07:54.849] ComfyUI version: 0.34.1
+[2026-09-15 17:07:54.850] comfy-aimdo version: 0.4.15
+[2026-09-15 17:07:54.852] comfy-kitchen version: 0.2.31
+[2026-09-15 17:07:54.865] comfyui-frontend-package version: 1.49.6
+[2026-09-15 17:07:54.866] comfyui-workflow-templates version: 0.11.48
+[2026-09-15 17:07:54.868] comfyui-embedded-docs version: 0.5.10
+[2026-09-15 17:07:54.869] comfy-kitchen version: 0.2.31
+[2026-09-15 17:07:54.870] comfy-aimdo version: 0.4.15
+[2026-09-15 17:07:54.872] [Prompt Server] web root: C:\Users\HP\anaconda3\envs\comfyui\Lib\site-packages\comfyui_frontend_package\static
+[2026-09-15 17:07:54.874] Asset seeder disabled
+[2026-09-15 17:07:55.425] No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-15 17:07:59.959] [34m[ComfyUI-Easy-Use] server: [0mv1.3.6 [92mLoaded[0m
+[2026-09-15 17:07:59.959] [34m[ComfyUI-Easy-Use] web root: [0mC:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-easy-use\web_version/v2 [92mLoaded[0m
+[2026-09-15 17:07:59.974] ComfyUI-GGUF: Allowing full torch compile
+[2026-09-15 17:07:59.984] [ComfyUI-HY-Motion1] Initializing custom node...
+[2026-09-15 17:07:59.991] Total VRAM 16311 MB, total RAM 65315 MB
+[2026-09-15 17:07:59.991] pytorch version: 2.10.0+cu128
+[2026-09-15 17:07:59.991] Set vram state to: NORMAL_VRAM
+[2026-09-15 17:07:59.992] Device: cuda:0 NVIDIA GeForce RTX 5060 Ti : cudaMallocAsync
+[2026-09-15 17:08:00.011] Using async weight offloading with 2 streams
+[2026-09-15 17:08:00.013] Enabled pinned memory 26126.0
+[2026-09-15 17:08:00.013] [ComfyUI-HY-Motion1] [OK] Node classes imported successfully
+[2026-09-15 17:08:00.016] [ComfyUI-HY-Motion1] [OK] Static routes added: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-HY-Motion1\static
+[2026-09-15 17:08:00.019] [ComfyUI-HY-Motion1] [OK] Loaded successfully!
+[2026-09-15 17:08:00.118] ### Loading: ComfyUI-Manager (V3.41)
+[2026-09-15 17:08:00.119] [ComfyUI-Manager] network_mode: public
+[2026-09-15 17:08:00.119] [ComfyUI-Manager] ComfyUI per-queue preview override detected (PR #11261). Manager's preview method feature is disabled. Use ComfyUI's --preview-method CLI option or 'Settings > Execution > Live preview method'.
+[2026-09-15 17:08:00.219] ### ComfyUI Revision: 5826 [7597a5a0] *DETACHED | Released on '2026-08-26'
+[2026-09-15 17:08:00.842] ======================================== ComfyUI-nunchaku Initialization ========================================
+[2026-09-15 17:08:00.845] Nunchaku version: Package 'nunchaku' not found.
+[2026-09-15 17:08:00.857] ComfyUI-nunchaku version: 1.2.1
+[2026-09-15 17:08:00.857] Could not parse nunchaku version: Package 'nunchaku' not found.. Please ensure you have at least v1.0.0.
+[2026-09-15 17:08:00.877] Node `NunchakuFluxDiTLoader` import failed:
+[2026-09-15 17:08:00.887] Node `NunchakuQwenImageDiTLoader` import failed:
+[2026-09-15 17:08:00.898] Nodes `NunchakuFluxLoraLoader` and `NunchakuFluxLoraStack` import failed:
+[2026-09-15 17:08:00.908] Nodes `NunchakuTextEncoderLoader` and `NunchakuTextEncoderLoaderV2` import failed:
+[2026-09-15 17:08:00.921] Nodes `NunchakuPulidApply`,`NunchakuPulidLoader`, `NunchakuPuLIDLoaderV2` and `NunchakuFluxPuLIDApplyV2` import failed:
+[2026-09-15 17:08:01.031] Nodes `NunchakuFluxIPAdapterApply` and `NunchakuIPAdapterLoader` import failed:
+[2026-09-15 17:08:01.043] Nodes `NunchakuZImageDiTLoader` import failed:
+[2026-09-15 17:08:01.045] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2026-09-15 17:08:01.056] Node `NunchakuModelMerger` import failed:
+[2026-09-15 17:08:01.059] 'nunchaku_versions.json' not found. Node will start in minimal mode. Use 'update node' to fetch versions.
+[2026-09-15 17:08:01.061] =================================================================================================================
+[2026-09-15 17:08:01.065] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2026-09-15 17:08:01.138] [38;2;246;103;68m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2026-09-15 17:08:01.138]   [1;37mPixaroma[0m v1.4.126  |  [38;2;246;103;68m79 nodes[0m Loaded
+[2026-09-15 17:08:01.139]   [0;37mComfyUI Tutorials: https://www.youtube.com/@pixaroma[0m
+[2026-09-15 17:08:01.139]   [0;37mThis is a notice, not an error. All [38;2;246;103;68mPixaroma[0;37m nodes work in both Classic and Nodes 2.0 mode.[0m
+[2026-09-15 17:08:01.139]   [0;37mIf something looks off right after switching the Node UI mode, hard-refresh the page (Ctrl+Shift+R).[0m
+[2026-09-15 17:08:01.139] [38;2;246;103;68m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2026-09-15 17:08:01.226] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2026-09-15 17:08:01.339] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2026-09-15 17:08:01.433] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2026-09-15 17:08:02.393] [SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[2026-09-15 17:08:02.411] [ATTENTION] Using backend: flash_attn
+[2026-09-15 17:08:02.430] [Trellis2-GGUF] Successfully monkeypatched DinoV3ProjFeatureExtractor.forward
+[2026-09-15 17:08:02.438] [SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[2026-09-15 17:08:02.442] [Trellis2-GGUF] Successfully monkeypatched Trellis2ImageTo3DPipeline.get_proj_cond_shape
+[2026-09-15 17:08:02.448] ComfyUI-GGUF: Allowing full torch compile
+[2026-09-15 17:08:02.529] [Trellis2] Using native ComfyUI-GGUF support (ops/dequant/loader)
+[2026-09-15 17:08:02.538] [SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[2026-09-15 17:08:03.225] [36;20m[C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ckpts path: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts[0m
+[2026-09-15 17:08:03.225] [36;20m[C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2026-09-15 17:08:03.226] [36;20m[C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2026-09-15 17:08:03.505] DWPose: Onnxruntime with acceleration providers detected
+[2026-09-15 17:08:03.541] [CRT Post Process][INFO] Loading module
+[2026-09-15 17:08:03.720] [crt-pll] presets + automix routes registered
+[2026-09-15 17:08:03.754] 
+[2026-09-15 17:08:03.754] [92m[rgthree-comfy] Loaded 48 epic nodes. 🎉[0m
+[2026-09-15 17:08:03.755] 
+[2026-09-15 17:08:03.755] [33m[rgthree-comfy] ComfyUI's new Node 2.0 rendering may be incompatible with some rgthree-comfy nodes and features, breaking some rendering as well as losing the ability to access a node's properties (a vital part of many nodes). It also appears to run MUCH more slowly spiking CPU usage and causing jankiness and unresponsiveness, especially with large workflows. Personally I am not planning to use the new Nodes 2.0 and, unfortunately, am not able to invest the time to investigate and overhaul rgthree-comfy where needed. If you have issues when Nodes 2.0 is enabled, I'd urge you to switch it off as well and join me in hoping ComfyUI is not planning to deprecate the existing, stable canvas rendering all together.
+[2026-09-15 17:08:03.797] [VibeVoice] SageAttention available for acceleration
+[2026-09-15 17:08:03.799] [VibeVoice] Using embedded VibeVoice (MIT licensed)
+[2026-09-15 17:08:03.979] [VibeVoice] VibeVoice nodes registered successfully
+[2026-09-15 17:08:03.987] 
+[2026-09-15 17:08:03.987]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\websocket_image_save.py
+[2026-09-15 17:08:03.987]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-Krea2T-Enhancer
+[2026-09-15 17:08:03.987]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-GGUF
+[2026-09-15 17:08:03.988]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI_IPAdapter_plus
+[2026-09-15 17:08:03.988]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-inpaint-nodes
+[2026-09-15 17:08:03.988]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-mickmumpitz-nodes
+[2026-09-15 17:08:03.988]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\rgthree-comfy
+[2026-09-15 17:08:03.988]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-tooling-nodes
+[2026-09-15 17:08:03.988]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-spectrum-minimax-h3
+[2026-09-15 17:08:03.988]    0.0 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-HY-Motion1
+[2026-09-15 17:08:03.988]    0.1 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-kjnodes
+[2026-09-15 17:08:03.988]    0.1 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit
+[2026-09-15 17:08:03.988]    0.1 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-Pixaroma
+[2026-09-15 17:08:03.989]    0.1 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-Trellis2-GGUF
+[2026-09-15 17:08:03.989]    0.2 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\crt-nodes
+[2026-09-15 17:08:03.989]    0.2 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-nunchaku
+[2026-09-15 17:08:03.989]    0.2 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\VibeVoice-ComfyUI
+[2026-09-15 17:08:03.989]    0.3 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui_controlnet_aux
+[2026-09-15 17:08:03.989]    0.6 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-videohelpersuite
+[2026-09-15 17:08:03.989]    0.7 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-manager
+[2026-09-15 17:08:03.989]    1.1 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\ComfyUI-Trellis2
+[2026-09-15 17:08:03.989]    3.5 seconds: C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-easy-use
+[2026-09-15 17:08:03.989] 
+[2026-09-15 17:08:04.002] Context impl SQLiteImpl.
+[2026-09-15 17:08:04.002] Will assume non-transactional DDL.
+[2026-09-15 17:08:04.082] Using RAM pressure cache.
+[2026-09-15 17:08:04.083] Starting server
+[2026-09-15 17:08:04.083] To see the GUI go to: http://127.0.0.1:8188
+[2026-09-15 17:08:10.353] [DEPRECATION WARNING] Detected import of deprecated legacy API: /scripts/ui.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
+[2026-09-15 17:08:10.356] [DEPRECATION WARNING] Detected import of deprecated legacy API: /extensions/core/groupNode.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
+[2026-09-15 17:08:14.026] [DEPRECATION WARNING] Detected import of deprecated legacy API: /extensions/core/widgetInputs.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
+[2026-09-15 17:08:15.689] [VibeVoice] Found 2 VibeVoice model(s) available
+[2026-09-15 17:08:15.690] [VibeVoice] No LoRA adapters found in ComfyUI/models/vibevoice/loras
+[2026-09-15 17:08:16.145] [DEPRECATION WARNING] Detected import of deprecated legacy API: /scripts/ui/components/buttonGroup.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
+[2026-09-15 17:08:16.164] [DEPRECATION WARNING] Detected import of deprecated legacy API: /scripts/ui/components/button.js. This is likely caused by a custom node extension using outdated APIs. Please update your extensions or contact the extension author for an updated version.
+[2026-09-15 17:11:42.912] FETCH ComfyRegistry Data [DONE]
+[2026-09-15 17:11:43.413] [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+[2026-09-15 17:11:43.489] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2026-09-15 17:11:44.140] [ComfyUI-Manager] All startup tasks have been completed.
+[2026-09-15 17:11:55.478] got prompt
+[2026-09-15 17:11:56.076] [SplatKit] WARNING: resolution below 720p (540x960); 1080p recommended
+[2026-09-15 17:11:56.076] [SplatKit] 16 views, 1 ring - quick test: 16 views (16 per ring at pitch [15])
+[2026-09-15 17:12:20.745] [SplatKit] 2026-09-15 17:12:20,745 | INFO | Canonical clip written to C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_cb7b69460ec5_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8135207-sd_540_960_25fps\canonical_clip.mp4 (121 frames)
+[2026-09-15 17:12:20.754] [SplatKit] working_video: C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_cb7b69460ec5_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8135207-sd_540_960_25fps\canonical_clip.mp4
+[2026-09-15 17:12:20.754] [SplatKit] clip_metadata: C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_cb7b69460ec5_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8135207-sd_540_960_25fps\canonical_clip.json
+[2026-09-15 17:12:20.755] [SplatKit] num_frames:    121
+[2026-09-15 17:12:20.755] [SplatKit] reused:        false
+[2026-09-15 17:12:24.444] [SplatKit] body pose in ComfyUI: 121 frames at 540x960 using C:\Users\HP\Apps\ComfyUI\models\detection\sam_3d_body_dinov3_bf16.safetensors
+[2026-09-15 17:12:26.415] Requested to load SAM3DBody
+[2026-09-15 17:12:26.757] Model SAM3DBody prepared for dynamic VRAM loading. 3589MB Staged. 0 patches attached. Force pre-loaded 878 weights: 685733 KB.
+[2026-09-15 17:13:51.497] SAM3D body inference: 100%|██████████████████████████████████████████████████████████| 121/121 [01:24<00:00,  1.43it/s]SAM3D body inference: 100%|██████████████████████████████████████████████████████████| 121/121 [01:24<00:00,  1.43it/s]
+[2026-09-15 17:13:52.835] [SplatKit] body pose: 121 frames, 70 keypoints -> C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_cb7b69460ec5_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8135207-sd_540_960_25fps\sam3d_mhr70_cb7b69460ec5.npz
+[2026-09-15 17:13:52.837] [SplatKit] generating 16 views for 8135207-sd_540_960_25fps.mp4 (r34803835c9, turbo 4 steps, attention=sdpa)
+[2026-09-15 17:13:59.364] [SplatKit] 2026-09-15 17:13:59,364 | INFO | Using SAM 3D Body pose supplied by the caller (121 frames)
+[2026-09-15 17:15:04.450] [SplatKit] Traceback (most recent call last):
+[2026-09-15 17:15:04.451] [SplatKit] File "<frozen runpy>", line 198, in _run_module_as_main
+[2026-09-15 17:15:04.451] [SplatKit] File "<frozen runpy>", line 88, in _run_code
+[2026-09-15 17:15:04.452] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\skeleton\worker.py", line 45, in <module>
+[2026-09-15 17:15:04.452] [SplatKit] main(sys.argv[1])
+[2026-09-15 17:15:04.452] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\skeleton\worker.py", line 31, in main
+[2026-09-15 17:15:04.452] [SplatKit] build_skeleton_conditioning(
+[2026-09-15 17:15:04.453] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\skeleton\pipeline.py", line 265, in build_skeleton_conditioning
+[2026-09-15 17:15:04.453] [SplatKit] input_framing = analyze_input_framing(
+[2026-09-15 17:15:04.453] [SplatKit] ^^^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:15:04.453] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\geometry\framing.py", line 309, in analyze_input_framing
+[2026-09-15 17:15:04.453] [SplatKit] raise ValueError("No valid frames for input framing analysis.")
+[2026-09-15 17:15:04.453] [SplatKit] ValueError: No valid frames for input framing analysis.
+[2026-09-15 17:15:05.362] [SplatKit] Traceback (most recent call last):
+[2026-09-15 17:15:05.363] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\inference.py", line 157, in <module>
+[2026-09-15 17:15:05.363] [SplatKit] main()
+[2026-09-15 17:15:05.363] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\inference.py", line 149, in main
+[2026-09-15 17:15:05.364] [SplatKit] Fire(inference)
+[2026-09-15 17:15:05.364] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\venv\Lib\site-packages\fire\core.py", line 135, in Fire
+[2026-09-15 17:15:05.365] [SplatKit] component_trace = _Fire(component, args, parsed_flag_args, context, name)
+[2026-09-15 17:15:05.366] [SplatKit] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:15:05.366] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\venv\Lib\site-packages\fire\core.py", line 468, in _Fire
+[2026-09-15 17:15:05.366] [SplatKit] component, remaining_args = _CallAndUpdateTrace(
+[2026-09-15 17:15:05.367] [SplatKit] ^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:15:05.367] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\venv\Lib\site-packages\fire\core.py", line 684, in _CallAndUpdateTrace
+[2026-09-15 17:15:05.368] [SplatKit] component = fn(*varargs, **kwargs)
+[2026-09-15 17:15:05.368] [SplatKit] ^^^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:15:05.368] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\inference.py", line 115, in inference
+[2026-09-15 17:15:05.368] [SplatKit] return run_pipeline(
+[2026-09-15 17:15:05.368] [SplatKit] ^^^^^^^^^^^^^
+[2026-09-15 17:15:05.368] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\pipeline.py", line 408, in run_pipeline
+[2026-09-15 17:15:05.369] [SplatKit] conditioning = _build_conditioning(
+[2026-09-15 17:15:05.369] [SplatKit] ^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:15:05.369] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\pipeline.py", line 125, in _build_conditioning
+[2026-09-15 17:15:05.369] [SplatKit] subprocess.run(
+[2026-09-15 17:15:05.369] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend_cache\python\cpython-3.11-windows-x86_64-none\Lib\subprocess.py", line 571, in run
+[2026-09-15 17:15:05.382] [SplatKit] raise CalledProcessError(retcode, process.args,
+[2026-09-15 17:15:05.382] [SplatKit] subprocess.CalledProcessError: Command '['C:\\Users\\HP\\Apps\\ComfyUI\\custom_nodes\\comfyui-splatkit\\bin\\splat_backend\\venv\\Scripts\\python.exe', '-m', 'fdanyone.skeleton.worker', 'C:\\Users\\HP\\Apps\\ComfyUI\\output\\splatkit\\4danyone\\220ba479c4\\clip_cb7b69460ec5_e26092d28fa2_4876ecbae5c5_59fa45200c50\\.8135207-sd_540_960_25fps.scratch-5fc1gg2c\\.skeleton-worker-request.json']' returned non-zero exit status 1.
+[2026-09-15 17:15:05.805] !!! Exception during processing !!! backend exited with code 1:
+[2026-09-15 17:15:05.830] Traceback (most recent call last):
+[2026-09-15 17:15:05.834] Prompt executed in 190.35 seconds
+[2026-09-15 17:15:18.349] got prompt
+[2026-09-15 17:15:18.414] [SplatKit] WARNING: resolution below 720p (540x960); 1080p recommended
+[2026-09-15 17:15:18.415] [SplatKit] 16 views, 1 ring - quick test: 16 views (16 per ring at pitch [15])
+[2026-09-15 17:15:35.005] [SplatKit] reusing body pose C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_cb7b69460ec5_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8135207-sd_540_960_25fps\sam3d_mhr70_cb7b69460ec5.npz
+[2026-09-15 17:15:35.005] [SplatKit] generating 16 views for 8135207-sd_540_960_25fps.mp4 (r5c9931c886, turbo 4 steps, attention=sdpa)
+[2026-09-15 17:15:39.961] [SplatKit] 2026-09-15 17:15:39,961 | INFO | Using SAM 3D Body pose supplied by the caller (121 frames)
+[2026-09-15 17:16:14.581] [SplatKit] Traceback (most recent call last):
+[2026-09-15 17:16:14.581] [SplatKit] File "<frozen runpy>", line 198, in _run_module_as_main
+[2026-09-15 17:16:14.581] [SplatKit] File "<frozen runpy>", line 88, in _run_code
+[2026-09-15 17:16:14.581] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\skeleton\worker.py", line 45, in <module>
+[2026-09-15 17:16:14.581] [SplatKit] main(sys.argv[1])
+[2026-09-15 17:16:14.582] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\skeleton\worker.py", line 31, in main
+[2026-09-15 17:16:14.582] [SplatKit] build_skeleton_conditioning(
+[2026-09-15 17:16:14.582] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\skeleton\pipeline.py", line 265, in build_skeleton_conditioning
+[2026-09-15 17:16:14.582] [SplatKit] input_framing = analyze_input_framing(
+[2026-09-15 17:16:14.583] [SplatKit] ^^^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:16:14.583] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\geometry\framing.py", line 309, in analyze_input_framing
+[2026-09-15 17:16:14.583] [SplatKit] raise ValueError("No valid frames for input framing analysis.")
+[2026-09-15 17:16:14.583] [SplatKit] ValueError: No valid frames for input framing analysis.
+[2026-09-15 17:16:15.291] [SplatKit] Traceback (most recent call last):
+[2026-09-15 17:16:15.292] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\inference.py", line 157, in <module>
+[2026-09-15 17:16:15.292] [SplatKit] main()
+[2026-09-15 17:16:15.292] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\inference.py", line 149, in main
+[2026-09-15 17:16:15.292] [SplatKit] Fire(inference)
+[2026-09-15 17:16:15.292] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\venv\Lib\site-packages\fire\core.py", line 135, in Fire
+[2026-09-15 17:16:15.292] [SplatKit] component_trace = _Fire(component, args, parsed_flag_args, context, name)
+[2026-09-15 17:16:15.292] [SplatKit] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:16:15.292] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\venv\Lib\site-packages\fire\core.py", line 468, in _Fire
+[2026-09-15 17:16:15.292] [SplatKit] component, remaining_args = _CallAndUpdateTrace(
+[2026-09-15 17:16:15.292] [SplatKit] ^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:16:15.293] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\venv\Lib\site-packages\fire\core.py", line 684, in _CallAndUpdateTrace
+[2026-09-15 17:16:15.293] [SplatKit] component = fn(*varargs, **kwargs)
+[2026-09-15 17:16:15.293] [SplatKit] ^^^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:16:15.294] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\inference.py", line 115, in inference
+[2026-09-15 17:16:15.295] [SplatKit] return run_pipeline(
+[2026-09-15 17:16:15.295] [SplatKit] ^^^^^^^^^^^^^
+[2026-09-15 17:16:15.295] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\pipeline.py", line 408, in run_pipeline
+[2026-09-15 17:16:15.296] [SplatKit] conditioning = _build_conditioning(
+[2026-09-15 17:16:15.296] [SplatKit] ^^^^^^^^^^^^^^^^^^^^
+[2026-09-15 17:16:15.296] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend\4DAnyone\fdanyone\pipeline.py", line 125, in _build_conditioning
+[2026-09-15 17:16:15.296] [SplatKit] subprocess.run(
+[2026-09-15 17:16:15.296] [SplatKit] File "C:\Users\HP\Apps\ComfyUI\custom_nodes\comfyui-splatkit\bin\splat_backend_cache\python\cpython-3.11-windows-x86_64-none\Lib\subprocess.py", line 571, in run
+[2026-09-15 17:16:15.296] [SplatKit] raise CalledProcessError(retcode, process.args,
+[2026-09-15 17:16:15.296] [SplatKit] subprocess.CalledProcessError: Command '['C:\\Users\\HP\\Apps\\ComfyUI\\custom_nodes\\comfyui-splatkit\\bin\\splat_backend\\venv\\Scripts\\python.exe', '-m', 'fdanyone.skeleton.worker', 'C:\\Users\\HP\\Apps\\ComfyUI\\output\\splatkit\\4danyone\\220ba479c4\\clip_cb7b69460ec5_e26092d28fa2_4876ecbae5c5_59fa45200c50\\.8135207-sd_540_960_25fps.scratch-fzybczet\\.skeleton-worker-request.json']' returned non-zero exit status 1.
+[2026-09-15 17:16:15.605] !!! Exception during processing !!! backend exited with code 1:
+[2026-09-15 17:16:15.606] Traceback (most recent call last):
+[2026-09-15 17:16:15.607] Prompt executed in 57.25 seconds
+[2026-09-15 17:37:43.586] got prompt
+[2026-09-15 17:37:43.667] [SplatKit] WARNING: resolution below 720p (540x960); 1080p recommended
+[2026-09-15 17:37:43.667] [SplatKit] 16 views, 1 ring - quick test: 16 views (16 per ring at pitch [15])
+[2026-09-15 17:38:02.368] [SplatKit] 2026-09-15 17:38:02,367 | INFO | Canonical clip written to C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8066962-sd_540_960_25fps\canonical_clip.mp4 (121 frames)
+[2026-09-15 17:38:02.374] [SplatKit] working_video: C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8066962-sd_540_960_25fps\canonical_clip.mp4
+[2026-09-15 17:38:02.374] [SplatKit] clip_metadata: C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8066962-sd_540_960_25fps\canonical_clip.json
+[2026-09-15 17:38:02.375] [SplatKit] num_frames:    121
+[2026-09-15 17:38:02.375] [SplatKit] reused:        false
+[2026-09-15 17:38:05.846] [SplatKit] body pose in ComfyUI: 121 frames at 540x960 using C:\Users\HP\Apps\ComfyUI\models\detection\sam_3d_body_dinov3_bf16.safetensors
+[2026-09-15 17:38:07.836] Requested to load SAM3DBody
+[2026-09-15 17:38:08.308] Model SAM3DBody prepared for dynamic VRAM loading. 3589MB Staged. 0 patches attached. Force pre-loaded 878 weights: 685733 KB.
+[2026-09-15 17:39:34.344] SAM3D body inference: 100%|██████████████████████████████████████████████████████████| 121/121 [01:26<00:00,  1.42it/s]SAM3D body inference: 100%|██████████████████████████████████████████████████████████| 121/121 [01:26<00:00,  1.41it/s]
+[2026-09-15 17:39:35.653] [SplatKit] body pose: 121 frames, 70 keypoints -> C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8066962-sd_540_960_25fps\sam3d_mhr70_46caf6b86019.npz
+[2026-09-15 17:39:35.654] [SplatKit] generating 16 views for 8066962-sd_540_960_25fps.mp4 (r8e9a3c926f, turbo 4 steps, attention=sdpa)
+[2026-09-15 17:39:39.329] [SplatKit] 2026-09-15 17:39:39,328 | INFO | Using SAM 3D Body pose supplied by the caller (121 frames)
+[2026-09-15 17:43:56.939] [SplatKit] 2026-09-15 17:43:56,939 | INFO | Using cuda:0 (NVIDIA GeForce RTX 5060 Ti)
+[2026-09-15 17:43:57.903] [SplatKit] 2026-09-15 17:43:57,903 | INFO | Loading skeleton conditioning from 04.mp4
+[2026-09-15 17:44:00.330] [SplatKit] 2026-09-15 17:44:00,330 | INFO | Loading skeleton conditioning from 09.mp4
+[2026-09-15 17:44:02.660] [SplatKit] 2026-09-15 17:44:02,659 | INFO | Loading skeleton conditioning from 14.mp4
+[2026-09-15 17:44:05.073] [SplatKit] 2026-09-15 17:44:05,072 | INFO | Loading skeleton conditioning from 19.mp4
+[2026-09-15 17:45:42.286] [SplatKit] 2026-09-15 17:45:42,285 | INFO | Loading skeleton conditioning from 00.mp4
+[2026-09-15 17:45:45.161] [SplatKit] 2026-09-15 17:45:45,161 | INFO | Loading skeleton conditioning from 01.mp4
+[2026-09-15 17:45:47.761] [SplatKit] 2026-09-15 17:45:47,761 | INFO | Loading skeleton conditioning from 02.mp4
+[2026-09-15 17:45:50.436] [SplatKit] 2026-09-15 17:45:50,436 | INFO | Loading skeleton conditioning from 03.mp4
+[2026-09-15 17:47:12.619] [SplatKit] 2026-09-15 17:47:12,618 | INFO | Loading skeleton conditioning from 04.mp4
+[2026-09-15 17:47:15.481] [SplatKit] 2026-09-15 17:47:15,481 | INFO | Loading skeleton conditioning from 05.mp4
+[2026-09-15 17:47:18.166] [SplatKit] 2026-09-15 17:47:18,165 | INFO | Loading skeleton conditioning from 06.mp4
+[2026-09-15 17:47:20.924] [SplatKit] 2026-09-15 17:47:20,923 | INFO | Loading skeleton conditioning from 07.mp4
+[2026-09-15 17:48:37.509] [SplatKit] 2026-09-15 17:48:37,509 | INFO | Loading skeleton conditioning from 08.mp4
+[2026-09-15 17:48:40.244] [SplatKit] 2026-09-15 17:48:40,243 | INFO | Loading skeleton conditioning from 09.mp4
+[2026-09-15 17:48:42.884] [SplatKit] 2026-09-15 17:48:42,883 | INFO | Loading skeleton conditioning from 10.mp4
+[2026-09-15 17:48:45.585] [SplatKit] 2026-09-15 17:48:45,585 | INFO | Loading skeleton conditioning from 11.mp4
+[2026-09-15 17:50:00.170] [SplatKit] 2026-09-15 17:50:00,169 | INFO | Loading skeleton conditioning from 12.mp4
+[2026-09-15 17:50:02.831] [SplatKit] 2026-09-15 17:50:02,831 | INFO | Loading skeleton conditioning from 13.mp4
+[2026-09-15 17:50:05.455] [SplatKit] 2026-09-15 17:50:05,455 | INFO | Loading skeleton conditioning from 14.mp4
+[2026-09-15 17:50:08.066] [SplatKit] 2026-09-15 17:50:08,065 | INFO | Loading skeleton conditioning from 15.mp4
+[2026-09-15 18:39:50.997] [SplatKit] RCP 1-to-4:   0%|          | 0/4 [00:00<?, ?it/s]
+[2026-09-15 19:45:31.450] [SplatKit] RCP 1-to-4:  25%|██▌       | 1/4 [46:55<2:20:45, 2815.22s/it]
+[2026-09-15 20:37:13.339] [SplatKit] RCP 1-to-4:  50%|█████     | 2/4 [1:52:35<1:55:54, 3477.12s/it]
+[2026-09-15 21:29:28.813] [SplatKit] RCP 1-to-4:  75%|███████▌  | 3/4 [2:44:17<55:05, 3305.78s/it]
+[2026-09-15 21:29:28.819] [SplatKit] RCP 1-to-4: 100%|██████████| 4/4 [3:36:33<00:00, 3238.55s/it]
+[2026-09-15 21:29:28.819] [SplatKit] RCP 1-to-4: 100%|██████████| 4/4 [3:36:33<00:00, 3248.26s/it]
+[2026-09-15 21:37:53.703] [SplatKit] 2026-09-15 21:37:53,702 | INFO | Publishing RCP camera 04
+[2026-09-15 21:40:41.319] [SplatKit] 2026-09-15 21:40:41,253 | INFO | Publishing RCP camera 09
+[2026-09-15 21:43:28.793] [SplatKit] 2026-09-15 21:43:28,793 | INFO | Publishing RCP camera 14
+[2026-09-15 21:46:16.370] [SplatKit] 2026-09-15 21:46:16,357 | INFO | Publishing RCP camera 19
+[2026-09-16 01:12:28.606] [SplatKit] Generate 16 target views:   0%|          | 0/4 [00:00<?, ?it/s]
+[2026-09-16 04:41:56.301] [SplatKit] Generate 16 target views:  25%|██▌       | 1/4 [3:23:24<10:10:12, 12204.09s/it]
+[2026-09-16 08:11:25.669] [SplatKit] Generate 16 target views:  50%|█████     | 2/4 [6:52:51<6:53:55, 12417.97s/it]
+[2026-09-16 11:57:51.386] [SplatKit] Generate 16 target views:  75%|███████▌  | 3/4 [10:22:21<3:28:07, 12487.10s/it]
+[2026-09-16 11:57:51.394] [SplatKit] Generate 16 target views: 100%|██████████| 4/4 [14:08:46<00:00, 12920.82s/it]
+[2026-09-16 11:57:51.395] [SplatKit] Generate 16 target views: 100%|██████████| 4/4 [14:08:46<00:00, 12731.72s/it]
+[2026-09-16 12:06:29.609] [SplatKit] 2026-09-16 12:06:29,608 | INFO | Publishing target camera 00
+[2026-09-16 12:09:18.822] [SplatKit] 2026-09-16 12:09:18,418 | INFO | Publishing target camera 01
+[2026-09-16 12:12:06.896] [SplatKit] 2026-09-16 12:12:06,895 | INFO | Publishing target camera 02
+[2026-09-16 12:14:55.620] [SplatKit] 2026-09-16 12:14:55,265 | INFO | Publishing target camera 03
+[2026-09-16 12:17:43.495] [SplatKit] 2026-09-16 12:17:43,495 | INFO | Publishing target camera 04
+[2026-09-16 12:20:31.757] [SplatKit] 2026-09-16 12:20:31,757 | INFO | Publishing target camera 05
+[2026-09-16 12:23:21.004] [SplatKit] 2026-09-16 12:23:20,630 | INFO | Publishing target camera 06
+[2026-09-16 12:26:15.326] [SplatKit] 2026-09-16 12:26:15,325 | INFO | Publishing target camera 07
+[2026-09-16 12:29:08.748] [SplatKit] 2026-09-16 12:29:08,373 | INFO | Publishing target camera 08
+[2026-09-16 12:32:02.054] [SplatKit] 2026-09-16 12:32:02,054 | INFO | Publishing target camera 09
+[2026-09-16 12:34:52.253] [SplatKit] 2026-09-16 12:34:52,242 | INFO | Publishing target camera 10
+[2026-09-16 12:37:41.237] [SplatKit] 2026-09-16 12:37:41,236 | INFO | Publishing target camera 11
+[2026-09-16 12:40:30.425] [SplatKit] 2026-09-16 12:40:30,248 | INFO | Publishing target camera 12
+[2026-09-16 12:43:19.315] [SplatKit] 2026-09-16 12:43:19,315 | INFO | Publishing target camera 13
+[2026-09-16 12:46:08.481] [SplatKit] 2026-09-16 12:46:08,303 | INFO | Publishing target camera 14
+[2026-09-16 12:48:57.428] [SplatKit] 2026-09-16 12:48:57,428 | INFO | Publishing target camera 15
+[2026-09-16 12:48:59.378] [SplatKit] attention_backend:              sdpa
+[2026-09-16 12:48:59.378] [SplatKit] num_rcp_videos:                 4
+[2026-09-16 12:48:59.378] [SplatKit] num_target_videos:              16
+[2026-09-16 12:48:59.378] [SplatKit] fps:                            25/1
+[2026-09-16 12:48:59.379] [SplatKit] peak_vram_allocated_bytes:      25833051582
+[2026-09-16 12:48:59.379] [SplatKit] peak_vram_reserved_bytes:       29964107776
+[2026-09-16 12:48:59.379] [SplatKit] total_pipeline_elapsed_seconds: 68963.266
+[2026-09-16 12:48:59.379] [SplatKit] result_dir:                     C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\fdanyone\8066962-sd_540_960_25fps@r8e9a3c926f
+[2026-09-16 12:48:59.380] [SplatKit] motion_dir:                     C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8066962-sd_540_960_25fps
+[2026-09-16 12:49:00.947] [SplatKit] exporting frames 0:120 of 8066962-sd_540_960_25fps@r8e9a3c926f -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f
+[2026-09-16 12:49:06.602] [SplatKit] skeleton: 121 frames, 70 keypoints -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\skeleton.npz
+[2026-09-16 12:49:52.276] [SplatKit] camera 05: 121 frames masked
+[2026-09-16 12:50:16.640] [SplatKit] camera 03: 121 frames masked
+[2026-09-16 12:50:40.899] [SplatKit] camera 00: 121 frames masked
+[2026-09-16 12:51:05.162] [SplatKit] camera 02: 121 frames masked
+[2026-09-16 12:51:29.390] [SplatKit] camera 01: 121 frames masked
+[2026-09-16 12:51:53.716] [SplatKit] camera 04: 121 frames masked
+[2026-09-16 12:52:17.954] [SplatKit] camera 06: 121 frames masked
+[2026-09-16 12:52:42.101] [SplatKit] camera 07: 121 frames masked
+[2026-09-16 12:53:06.250] [SplatKit] camera 10: 121 frames masked
+[2026-09-16 12:53:30.383] [SplatKit] camera 08: 121 frames masked
+[2026-09-16 12:53:54.515] [SplatKit] camera 09: 121 frames masked
+[2026-09-16 12:54:18.782] [SplatKit] camera 11: 121 frames masked
+[2026-09-16 12:54:42.975] [SplatKit] camera 12: 121 frames masked
+[2026-09-16 12:55:07.245] [SplatKit] camera 13: 121 frames masked
+[2026-09-16 12:55:31.396] [SplatKit] camera 14: 121 frames masked
+[2026-09-16 12:55:55.594] [SplatKit] camera 15: 121 frames masked
+[2026-09-16 12:55:56.089] [SplatKit] phase 1: matte 384.0s (decode overlapped on 6 workers)
+[2026-09-16 12:55:56.439] [SplatKit] frame 0: hull 4738 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_000
+[2026-09-16 12:55:56.571] [SplatKit] frame 1: hull 4757 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_001
+[2026-09-16 12:55:56.692] [SplatKit] frame 2: hull 4756 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_002
+[2026-09-16 12:55:56.813] [SplatKit] frame 3: hull 4729 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_003
+[2026-09-16 12:55:56.934] [SplatKit] frame 4: hull 4675 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_004
+[2026-09-16 12:55:57.057] [SplatKit] frame 5: hull 4672 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_005
+[2026-09-16 12:55:57.175] [SplatKit] frame 6: hull 4683 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_006
+[2026-09-16 12:55:57.294] [SplatKit] frame 7: hull 4658 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_007
+[2026-09-16 12:55:57.420] [SplatKit] frame 8: hull 4649 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_008
+[2026-09-16 12:55:57.547] [SplatKit] frame 9: hull 4658 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_009
+[2026-09-16 12:55:57.685] [SplatKit] frame 10: hull 4699 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_010
+[2026-09-16 12:55:57.819] [SplatKit] frame 11: hull 4695 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_011
+[2026-09-16 12:55:57.952] [SplatKit] frame 12: hull 4719 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_012
+[2026-09-16 12:55:58.078] [SplatKit] frame 13: hull 4731 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_013
+[2026-09-16 12:55:58.198] [SplatKit] frame 14: hull 4693 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_014
+[2026-09-16 12:55:58.319] [SplatKit] frame 15: hull 4658 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_015
+[2026-09-16 12:55:58.445] [SplatKit] frame 16: hull 4713 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_016
+[2026-09-16 12:55:58.570] [SplatKit] frame 17: hull 4716 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_017
+[2026-09-16 12:55:58.692] [SplatKit] frame 18: hull 4688 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_018
+[2026-09-16 12:55:58.819] [SplatKit] frame 19: hull 4670 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_019
+[2026-09-16 12:55:58.940] [SplatKit] frame 20: hull 4661 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_020
+[2026-09-16 12:55:59.075] [SplatKit] frame 21: hull 4663 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_021
+[2026-09-16 12:55:59.213] [SplatKit] frame 22: hull 4639 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_022
+[2026-09-16 12:55:59.335] [SplatKit] frame 23: hull 4650 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_023
+[2026-09-16 12:55:59.464] [SplatKit] frame 24: hull 4670 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_024
+[2026-09-16 12:55:59.590] [SplatKit] frame 25: hull 4667 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_025
+[2026-09-16 12:55:59.712] [SplatKit] frame 26: hull 4627 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_026
+[2026-09-16 12:55:59.838] [SplatKit] frame 27: hull 4646 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_027
+[2026-09-16 12:55:59.976] [SplatKit] frame 28: hull 4643 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_028
+[2026-09-16 12:56:00.097] [SplatKit] frame 29: hull 4656 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_029
+[2026-09-16 12:56:00.218] [SplatKit] frame 30: hull 4636 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_030
+[2026-09-16 12:56:00.338] [SplatKit] frame 31: hull 4617 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_031
+[2026-09-16 12:56:00.470] [SplatKit] frame 32: hull 4618 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_032
+[2026-09-16 12:56:00.603] [SplatKit] frame 33: hull 4641 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_033
+[2026-09-16 12:56:00.729] [SplatKit] frame 34: hull 4628 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_034
+[2026-09-16 12:56:00.855] [SplatKit] frame 35: hull 4595 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_035
+[2026-09-16 12:56:00.984] [SplatKit] frame 36: hull 4564 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_036
+[2026-09-16 12:56:01.108] [SplatKit] frame 37: hull 4559 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_037
+[2026-09-16 12:56:01.233] [SplatKit] frame 38: hull 4556 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_038
+[2026-09-16 12:56:01.358] [SplatKit] frame 39: hull 4550 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_039
+[2026-09-16 12:56:01.489] [SplatKit] frame 40: hull 4567 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_040
+[2026-09-16 12:56:01.626] [SplatKit] frame 41: hull 4559 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_041
+[2026-09-16 12:56:01.751] [SplatKit] frame 42: hull 4552 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_042
+[2026-09-16 12:56:01.875] [SplatKit] frame 43: hull 4523 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_043
+[2026-09-16 12:56:02.004] [SplatKit] frame 44: hull 4499 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_044
+[2026-09-16 12:56:02.126] [SplatKit] frame 45: hull 4489 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_045
+[2026-09-16 12:56:02.252] [SplatKit] frame 46: hull 4448 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_046
+[2026-09-16 12:56:02.386] [SplatKit] frame 47: hull 4463 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_047
+[2026-09-16 12:56:02.507] [SplatKit] frame 48: hull 4456 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_048
+[2026-09-16 12:56:02.628] [SplatKit] frame 49: hull 4460 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_049
+[2026-09-16 12:56:02.753] [SplatKit] frame 50: hull 4476 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_050
+[2026-09-16 12:56:02.877] [SplatKit] frame 51: hull 4480 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_051
+[2026-09-16 12:56:02.997] [SplatKit] frame 52: hull 4474 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_052
+[2026-09-16 12:56:03.121] [SplatKit] frame 53: hull 4482 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_053
+[2026-09-16 12:56:03.245] [SplatKit] frame 54: hull 4507 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_054
+[2026-09-16 12:56:03.371] [SplatKit] frame 55: hull 4502 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_055
+[2026-09-16 12:56:03.510] [SplatKit] frame 56: hull 4506 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_056
+[2026-09-16 12:56:03.643] [SplatKit] frame 57: hull 4470 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_057
+[2026-09-16 12:56:03.779] [SplatKit] frame 58: hull 4437 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_058
+[2026-09-16 12:56:03.901] [SplatKit] frame 59: hull 4452 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_059
+[2026-09-16 12:56:04.031] [SplatKit] frame 60: hull 4475 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_060
+[2026-09-16 12:56:04.152] [SplatKit] frame 61: hull 4499 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_061
+[2026-09-16 12:56:04.284] [SplatKit] frame 62: hull 4501 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_062
+[2026-09-16 12:56:04.422] [SplatKit] frame 63: hull 4504 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_063
+[2026-09-16 12:56:04.546] [SplatKit] frame 64: hull 4516 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_064
+[2026-09-16 12:56:04.670] [SplatKit] frame 65: hull 4542 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_065
+[2026-09-16 12:56:04.795] [SplatKit] frame 66: hull 4535 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_066
+[2026-09-16 12:56:04.918] [SplatKit] frame 67: hull 4529 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_067
+[2026-09-16 12:56:05.051] [SplatKit] frame 68: hull 4515 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_068
+[2026-09-16 12:56:05.175] [SplatKit] frame 69: hull 4509 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_069
+[2026-09-16 12:56:05.300] [SplatKit] frame 70: hull 4506 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_070
+[2026-09-16 12:56:05.426] [SplatKit] frame 71: hull 4504 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_071
+[2026-09-16 12:56:05.555] [SplatKit] frame 72: hull 4495 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_072
+[2026-09-16 12:56:05.693] [SplatKit] frame 73: hull 4488 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_073
+[2026-09-16 12:56:05.828] [SplatKit] frame 74: hull 4476 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_074
+[2026-09-16 12:56:05.950] [SplatKit] frame 75: hull 4464 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_075
+[2026-09-16 12:56:06.083] [SplatKit] frame 76: hull 4452 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_076
+[2026-09-16 12:56:06.216] [SplatKit] frame 77: hull 4461 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_077
+[2026-09-16 12:56:06.337] [SplatKit] frame 78: hull 4462 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_078
+[2026-09-16 12:56:06.463] [SplatKit] frame 79: hull 4468 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_079
+[2026-09-16 12:56:06.589] [SplatKit] frame 80: hull 4469 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_080
+[2026-09-16 12:56:06.717] [SplatKit] frame 81: hull 4484 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_081
+[2026-09-16 12:56:06.851] [SplatKit] frame 82: hull 4485 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_082
+[2026-09-16 12:56:06.990] [SplatKit] frame 83: hull 4485 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_083
+[2026-09-16 12:56:07.115] [SplatKit] frame 84: hull 4492 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_084
+[2026-09-16 12:56:07.236] [SplatKit] frame 85: hull 4499 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_085
+[2026-09-16 12:56:07.356] [SplatKit] frame 86: hull 4501 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_086
+[2026-09-16 12:56:07.480] [SplatKit] frame 87: hull 4504 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_087
+[2026-09-16 12:56:07.604] [SplatKit] frame 88: hull 4506 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_088
+[2026-09-16 12:56:07.728] [SplatKit] frame 89: hull 4504 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_089
+[2026-09-16 12:56:07.862] [SplatKit] frame 90: hull 4505 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_090
+[2026-09-16 12:56:07.998] [SplatKit] frame 91: hull 4506 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_091
+[2026-09-16 12:56:08.123] [SplatKit] frame 92: hull 4515 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_092
+[2026-09-16 12:56:08.244] [SplatKit] frame 93: hull 4524 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_093
+[2026-09-16 12:56:08.366] [SplatKit] frame 94: hull 4534 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_094
+[2026-09-16 12:56:08.486] [SplatKit] frame 95: hull 4549 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_095
+[2026-09-16 12:56:08.608] [SplatKit] frame 96: hull 4571 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_096
+[2026-09-16 12:56:08.729] [SplatKit] frame 97: hull 4565 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_097
+[2026-09-16 12:56:08.849] [SplatKit] frame 98: hull 4564 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_098
+[2026-09-16 12:56:08.975] [SplatKit] frame 99: hull 4559 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_099
+[2026-09-16 12:56:09.098] [SplatKit] frame 100: hull 4555 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_100
+[2026-09-16 12:56:09.216] [SplatKit] frame 101: hull 4575 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_101
+[2026-09-16 12:56:09.336] [SplatKit] frame 102: hull 4596 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_102
+[2026-09-16 12:56:09.482] [SplatKit] frame 103: hull 4605 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_103
+[2026-09-16 12:56:09.627] [SplatKit] frame 104: hull 4607 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_104
+[2026-09-16 12:56:09.753] [SplatKit] frame 105: hull 4596 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_105
+[2026-09-16 12:56:09.874] [SplatKit] frame 106: hull 4554 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_106
+[2026-09-16 12:56:09.999] [SplatKit] frame 107: hull 4556 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_107
+[2026-09-16 12:56:10.137] [SplatKit] frame 108: hull 4555 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_108
+[2026-09-16 12:56:10.262] [SplatKit] frame 109: hull 4563 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_109
+[2026-09-16 12:56:10.381] [SplatKit] frame 110: hull 4562 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_110
+[2026-09-16 12:56:10.507] [SplatKit] frame 111: hull 4585 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_111
+[2026-09-16 12:56:10.629] [SplatKit] frame 112: hull 4594 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_112
+[2026-09-16 12:56:10.752] [SplatKit] frame 113: hull 4622 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_113
+[2026-09-16 12:56:10.886] [SplatKit] frame 114: hull 4630 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_114
+[2026-09-16 12:56:11.017] [SplatKit] frame 115: hull 4629 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_115
+[2026-09-16 12:56:11.143] [SplatKit] frame 116: hull 4537 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_116
+[2026-09-16 12:56:11.276] [SplatKit] frame 117: hull 4650 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_117
+[2026-09-16 12:56:11.404] [SplatKit] frame 118: hull 4631 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_118
+[2026-09-16 12:56:11.525] [SplatKit] frame 119: hull 4632 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_119
+[2026-09-16 12:56:11.637] [SplatKit] frame 120: hull 4647 pts -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f\frame_120
+[2026-09-16 12:56:11.640] [SplatKit] phase 2: 15.6s
+[2026-09-16 12:56:11.640] [SplatKit] frameset ready: 121 frame(s) -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f
+[2026-09-16 12:56:17.820] [SplatKit] frameset: 121 frames, 16 cameras
+[2026-09-16 12:56:21.666] [SplatKit] training 121 frame(s) at 'standard' -> C:\Users\HP\Apps\ComfyUI\output\my_shot
+[2026-09-16 12:56:23.212] [SplatKit] 121 frame(s), 16 cameras, quality 'standard' (30000 cold + 1000 warm, clean on, advect on)
+[2026-09-16 13:44:53.397] [SplatKit] frame    0  cold 30000 it  48.49 min  gaussians   148952  cleaned opacity 6827, needle 161, speck 50
+[2026-09-16 13:44:54.351] [SplatKit] exported 148952 gaussians (148952 visible)
+[2026-09-16 13:45:17.856] [SplatKit] frame    1  warm   400 it   0.41 min  gaussians   147408  cleaned opacity 1470, needle 66, speck 8  advected 0 moved, 148952 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:45:18.730] [SplatKit] exported 147408 gaussians (147408 visible)
+[2026-09-16 13:45:42.077] [SplatKit] frame    2  warm   400 it   0.40 min  gaussians   145486  cleaned opacity 1822, needle 96, speck 4  advected 0 moved, 147408 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:45:42.928] [SplatKit] exported 145486 gaussians (145486 visible)
+[2026-09-16 13:46:06.603] [SplatKit] frame    3  warm   400 it   0.41 min  gaussians   143140  cleaned opacity 2245, needle 91, speck 6, mask 4  advected 0 moved, 145486 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:46:07.450] [SplatKit] exported 143140 gaussians (143140 visible)
+[2026-09-16 13:46:30.698] [SplatKit] frame    4  warm   400 it   0.40 min  gaussians   140633  cleaned opacity 2395, needle 99, speck 6, mask 7  advected 0 moved, 143140 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:46:31.534] [SplatKit] exported 140633 gaussians (140633 visible)
+[2026-09-16 13:46:54.586] [SplatKit] frame    5  warm   400 it   0.40 min  gaussians   137700  cleaned opacity 2803, needle 125, speck 3, mask 2  advected 0 moved, 140633 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:46:55.452] [SplatKit] exported 137700 gaussians (137700 visible)
+[2026-09-16 13:47:18.468] [SplatKit] frame    6  warm   400 it   0.40 min  gaussians   134735  cleaned opacity 2815, needle 132, speck 7, mask 11  advected 0 moved, 137700 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:47:19.304] [SplatKit] exported 134735 gaussians (134735 visible)
+[2026-09-16 13:47:42.302] [SplatKit] frame    7  warm   400 it   0.40 min  gaussians   131894  cleaned opacity 2673, needle 135, speck 9, mask 24  advected 0 moved, 134735 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:47:43.117] [SplatKit] exported 131894 gaussians (131894 visible)
+[2026-09-16 13:48:06.225] [SplatKit] frame    8  warm   400 it   0.40 min  gaussians   129231  cleaned opacity 2434, needle 182, speck 9, mask 38  advected 0 moved, 131894 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:48:07.006] [SplatKit] exported 129231 gaussians (129231 visible)
+[2026-09-16 13:48:30.278] [SplatKit] frame    9  warm   400 it   0.40 min  gaussians   126548  cleaned opacity 2461, needle 180, speck 4, mask 38  advected 0 moved, 129231 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:48:31.032] [SplatKit] exported 126548 gaussians (126548 visible)
+[2026-09-16 13:48:54.148] [SplatKit] frame   10  warm   400 it   0.40 min  gaussians   122441  cleaned opacity 3829, needle 236, speck 16, mask 26  advected 0 moved, 126548 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:48:54.887] [SplatKit] exported 122441 gaussians (122441 visible)
+[2026-09-16 13:49:17.927] [SplatKit] frame   11  warm   400 it   0.40 min  gaussians   119595  cleaned opacity 2628, needle 179, speck 11, mask 28  advected 0 moved, 122441 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:49:18.661] [SplatKit] exported 119595 gaussians (119595 visible)
+[2026-09-16 13:49:41.599] [SplatKit] frame   12  warm   400 it   0.39 min  gaussians   117403  cleaned opacity 1971, needle 179, speck 16, mask 26  advected 0 moved, 119595 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:49:42.296] [SplatKit] exported 117403 gaussians (117403 visible)
+[2026-09-16 13:50:05.370] [SplatKit] frame   13  warm   400 it   0.40 min  gaussians   115615  cleaned opacity 1614, needle 159, speck 5, mask 10  advected 0 moved, 117403 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:50:06.113] [SplatKit] exported 115615 gaussians (115615 visible)
+[2026-09-16 13:50:29.038] [SplatKit] frame   14  warm   400 it   0.39 min  gaussians   113960  cleaned opacity 1439, needle 177, speck 10, mask 29  advected 0 moved, 115615 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:50:29.734] [SplatKit] exported 113960 gaussians (113960 visible)
+[2026-09-16 13:50:52.630] [SplatKit] frame   15  warm   400 it   0.39 min  gaussians   112535  cleaned opacity 1222, needle 173, speck 9, mask 21  advected 0 moved, 113960 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:50:53.325] [SplatKit] exported 112535 gaussians (112535 visible)
+[2026-09-16 13:51:16.272] [SplatKit] frame   16  warm   400 it   0.39 min  gaussians   111302  cleaned opacity 1052, needle 171, speck 6, mask 4  advected 0 moved, 112535 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:51:16.985] [SplatKit] exported 111302 gaussians (111302 visible)
+[2026-09-16 13:51:39.883] [SplatKit] frame   17  warm   400 it   0.39 min  gaussians   110084  cleaned opacity 1002, needle 201, speck 15  advected 0 moved, 111302 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:51:40.573] [SplatKit] exported 110084 gaussians (110084 visible)
+[2026-09-16 13:52:03.485] [SplatKit] frame   18  warm   400 it   0.39 min  gaussians   108883  cleaned opacity 1001, needle 196, speck 4  advected 0 moved, 110084 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:52:04.153] [SplatKit] exported 108883 gaussians (108883 visible)
+[2026-09-16 13:52:27.096] [SplatKit] frame   19  warm   400 it   0.39 min  gaussians   107821  cleaned opacity 868, needle 182, speck 11, mask 1  advected 0 moved, 108883 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:52:27.763] [SplatKit] exported 107821 gaussians (107821 visible)
+[2026-09-16 13:52:50.718] [SplatKit] frame   20  warm   400 it   0.39 min  gaussians   106813  cleaned opacity 791, needle 207, speck 9, mask 1  advected 0 moved, 107821 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:52:51.383] [SplatKit] exported 106813 gaussians (106813 visible)
+[2026-09-16 13:53:14.330] [SplatKit] frame   21  warm   400 it   0.39 min  gaussians   105895  cleaned opacity 697, needle 210, speck 10, mask 1  advected 0 moved, 106813 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:53:14.982] [SplatKit] exported 105895 gaussians (105895 visible)
+[2026-09-16 13:53:37.920] [SplatKit] frame   22  warm   400 it   0.39 min  gaussians   104912  cleaned opacity 746, needle 226, speck 9, mask 2  advected 0 moved, 105895 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:53:38.543] [SplatKit] exported 104912 gaussians (104912 visible)
+[2026-09-16 13:54:01.474] [SplatKit] frame   23  warm   400 it   0.39 min  gaussians   104036  cleaned opacity 659, needle 210, speck 7  advected 0 moved, 104912 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:54:02.126] [SplatKit] exported 104036 gaussians (104036 visible)
+[2026-09-16 13:54:25.045] [SplatKit] frame   24  warm   400 it   0.39 min  gaussians   103184  cleaned opacity 648, needle 199, speck 5  advected 0 moved, 104036 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:54:25.681] [SplatKit] exported 103184 gaussians (103184 visible)
+[2026-09-16 13:54:48.609] [SplatKit] frame   25  warm   400 it   0.39 min  gaussians   102355  cleaned opacity 597, needle 217, speck 15  advected 0 moved, 103184 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:54:49.247] [SplatKit] exported 102355 gaussians (102355 visible)
+[2026-09-16 13:55:12.318] [SplatKit] frame   26  warm   400 it   0.40 min  gaussians   101527  cleaned opacity 588, needle 231, speck 9  advected 0 moved, 102355 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:55:12.638] [SplatKit] exported 101527 gaussians (101527 visible)
+[2026-09-16 13:55:36.118] [SplatKit] frame   27  warm   400 it   0.40 min  gaussians   100627  cleaned opacity 662, needle 227, speck 10, mask 1  advected 0 moved, 101527 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:55:36.730] [SplatKit] exported 100627 gaussians (100627 visible)
+[2026-09-16 13:56:00.378] [SplatKit] frame   28  warm   400 it   0.40 min  gaussians    99820  cleaned opacity 550, needle 241, speck 12, mask 4  advected 0 moved, 100627 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:56:00.997] [SplatKit] exported 99820 gaussians (99820 visible)
+[2026-09-16 13:56:24.608] [SplatKit] frame   29  warm   400 it   0.40 min  gaussians    98956  cleaned opacity 611, needle 241, speck 11, mask 1  advected 0 moved, 99820 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:56:25.229] [SplatKit] exported 98956 gaussians (98956 visible)
+[2026-09-16 13:56:48.757] [SplatKit] frame   30  warm   400 it   0.40 min  gaussians    98079  cleaned opacity 585, needle 281, speck 9, mask 2  advected 0 moved, 98956 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:56:49.379] [SplatKit] exported 98079 gaussians (98079 visible)
+[2026-09-16 13:57:12.933] [SplatKit] frame   31  warm   400 it   0.40 min  gaussians    97271  cleaned opacity 527, needle 268, speck 12, mask 1  advected 0 moved, 98079 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:57:13.522] [SplatKit] exported 97271 gaussians (97271 visible)
+[2026-09-16 13:57:36.860] [SplatKit] frame   32  warm   400 it   0.40 min  gaussians    96512  cleaned opacity 472, needle 279, speck 7, mask 1  advected 0 moved, 97271 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:57:37.464] [SplatKit] exported 96512 gaussians (96512 visible)
+[2026-09-16 13:58:01.081] [SplatKit] frame   33  warm   400 it   0.40 min  gaussians    95796  cleaned opacity 448, needle 257, speck 10, mask 1  advected 0 moved, 96512 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:58:01.693] [SplatKit] exported 95796 gaussians (95796 visible)
+[2026-09-16 13:58:24.938] [SplatKit] frame   34  warm   400 it   0.40 min  gaussians    95029  cleaned opacity 467, needle 288, speck 12  advected 0 moved, 95796 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:58:25.532] [SplatKit] exported 95029 gaussians (95029 visible)
+[2026-09-16 13:58:48.773] [SplatKit] frame   35  warm   400 it   0.40 min  gaussians    94281  cleaned opacity 476, needle 265, speck 7  advected 0 moved, 95029 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:58:49.366] [SplatKit] exported 94281 gaussians (94281 visible)
+[2026-09-16 13:59:12.838] [SplatKit] frame   36  warm   400 it   0.40 min  gaussians    93545  cleaned opacity 456, needle 271, speck 9  advected 0 moved, 94281 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:59:13.428] [SplatKit] exported 93545 gaussians (93545 visible)
+[2026-09-16 13:59:36.129] [SplatKit] frame   37  warm   400 it   0.39 min  gaussians    92824  cleaned opacity 454, needle 263, speck 4  advected 0 moved, 93545 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 13:59:36.724] [SplatKit] exported 92824 gaussians (92824 visible)
+[2026-09-16 13:59:59.874] [SplatKit] frame   38  warm   400 it   0.40 min  gaussians    92102  cleaned opacity 428, needle 287, speck 7  advected 0 moved, 92824 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:00:00.550] [SplatKit] exported 92102 gaussians (92102 visible)
+[2026-09-16 14:00:24.078] [SplatKit] frame   39  warm   400 it   0.40 min  gaussians    91397  cleaned opacity 434, needle 256, speck 15  advected 0 moved, 92102 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:00:24.652] [SplatKit] exported 91397 gaussians (91397 visible)
+[2026-09-16 14:00:48.447] [SplatKit] frame   40  warm   400 it   0.41 min  gaussians    90749  cleaned opacity 390, needle 250, speck 8  advected 0 moved, 91397 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:00:49.005] [SplatKit] exported 90749 gaussians (90749 visible)
+[2026-09-16 14:01:12.802] [SplatKit] frame   41  warm   400 it   0.41 min  gaussians    90082  cleaned opacity 382, needle 275, speck 10  advected 0 moved, 90749 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:01:13.376] [SplatKit] exported 90082 gaussians (90082 visible)
+[2026-09-16 14:01:36.802] [SplatKit] frame   42  warm   400 it   0.40 min  gaussians    89380  cleaned opacity 414, needle 280, speck 8  advected 0 moved, 90082 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:01:37.348] [SplatKit] exported 89380 gaussians (89380 visible)
+[2026-09-16 14:01:59.998] [SplatKit] frame   43  warm   400 it   0.39 min  gaussians    88678  cleaned opacity 424, needle 263, speck 15  advected 0 moved, 89380 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:02:00.267] [SplatKit] exported 88678 gaussians (88678 visible)
+[2026-09-16 14:02:22.755] [SplatKit] frame   44  warm   400 it   0.38 min  gaussians    87950  cleaned opacity 454, needle 262, speck 12  advected 0 moved, 88678 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:02:23.285] [SplatKit] exported 87950 gaussians (87950 visible)
+[2026-09-16 14:02:45.835] [SplatKit] frame   45  warm   400 it   0.38 min  gaussians    87239  cleaned opacity 431, needle 267, speck 12, mask 1  advected 0 moved, 87950 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:02:46.389] [SplatKit] exported 87239 gaussians (87239 visible)
+[2026-09-16 14:03:10.003] [SplatKit] frame   46  warm   400 it   0.40 min  gaussians    86479  cleaned opacity 459, needle 285, speck 16  advected 0 moved, 87239 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:03:10.525] [SplatKit] exported 86479 gaussians (86479 visible)
+[2026-09-16 14:03:33.496] [SplatKit] frame   47  warm   400 it   0.39 min  gaussians    85692  cleaned opacity 454, needle 320, speck 12, mask 1  advected 0 moved, 86479 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:03:34.002] [SplatKit] exported 85692 gaussians (85692 visible)
+[2026-09-16 14:03:57.514] [SplatKit] frame   48  warm   400 it   0.40 min  gaussians    84996  cleaned opacity 408, needle 278, speck 10  advected 0 moved, 85692 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:03:58.056] [SplatKit] exported 84996 gaussians (84996 visible)
+[2026-09-16 14:04:21.820] [SplatKit] frame   49  warm   400 it   0.41 min  gaussians    84373  cleaned opacity 336, needle 270, speck 17  advected 0 moved, 84996 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:04:22.349] [SplatKit] exported 84373 gaussians (84373 visible)
+[2026-09-16 14:04:45.373] [SplatKit] frame   50  warm   400 it   0.39 min  gaussians    83763  cleaned opacity 324, needle 278, speck 8  advected 0 moved, 84373 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:04:45.891] [SplatKit] exported 83763 gaussians (83763 visible)
+[2026-09-16 14:05:08.847] [SplatKit] frame   51  warm   400 it   0.39 min  gaussians    83141  cleaned opacity 274, needle 338, speck 10  advected 0 moved, 83763 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:05:09.355] [SplatKit] exported 83141 gaussians (83141 visible)
+[2026-09-16 14:05:32.125] [SplatKit] frame   52  warm   400 it   0.39 min  gaussians    82574  cleaned opacity 267, needle 290, speck 10  advected 0 moved, 83141 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:05:32.653] [SplatKit] exported 82574 gaussians (82574 visible)
+[2026-09-16 14:05:55.400] [SplatKit] frame   53  warm   400 it   0.39 min  gaussians    82032  cleaned opacity 232, needle 292, speck 18  advected 0 moved, 82574 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:05:55.907] [SplatKit] exported 82032 gaussians (82032 visible)
+[2026-09-16 14:06:18.940] [SplatKit] frame   54  warm   400 it   0.39 min  gaussians    81489  cleaned opacity 231, needle 300, speck 12  advected 0 moved, 82032 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:06:19.459] [SplatKit] exported 81489 gaussians (81489 visible)
+[2026-09-16 14:06:41.929] [SplatKit] frame   55  warm   400 it   0.38 min  gaussians    81006  cleaned opacity 212, needle 262, speck 9  advected 0 moved, 81489 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:06:42.469] [SplatKit] exported 81006 gaussians (81006 visible)
+[2026-09-16 14:07:05.304] [SplatKit] frame   56  warm   400 it   0.39 min  gaussians    80518  cleaned opacity 189, needle 279, speck 20  advected 0 moved, 81006 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:07:05.821] [SplatKit] exported 80518 gaussians (80518 visible)
+[2026-09-16 14:07:28.568] [SplatKit] frame   57  warm   400 it   0.39 min  gaussians    80074  cleaned opacity 176, needle 258, speck 10  advected 0 moved, 80518 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:07:29.058] [SplatKit] exported 80074 gaussians (80074 visible)
+[2026-09-16 14:07:51.800] [SplatKit] frame   58  warm   400 it   0.39 min  gaussians    79563  cleaned opacity 203, needle 297, speck 11  advected 0 moved, 80074 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:07:52.291] [SplatKit] exported 79563 gaussians (79563 visible)
+[2026-09-16 14:08:15.007] [SplatKit] frame   59  warm   400 it   0.39 min  gaussians    79063  cleaned opacity 183, needle 305, speck 12  advected 0 moved, 79563 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:08:15.479] [SplatKit] exported 79063 gaussians (79063 visible)
+[2026-09-16 14:08:38.232] [SplatKit] frame   60  warm   400 it   0.39 min  gaussians    78634  cleaned opacity 145, needle 269, speck 15  advected 0 moved, 79063 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:08:38.725] [SplatKit] exported 78634 gaussians (78634 visible)
+[2026-09-16 14:09:01.467] [SplatKit] frame   61  warm   400 it   0.39 min  gaussians    78251  cleaned opacity 125, needle 248, speck 10  advected 0 moved, 78634 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:09:01.952] [SplatKit] exported 78251 gaussians (78251 visible)
+[2026-09-16 14:09:24.702] [SplatKit] frame   62  warm   400 it   0.39 min  gaussians    77797  cleaned opacity 142, needle 290, speck 22  advected 0 moved, 78251 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:09:25.191] [SplatKit] exported 77797 gaussians (77797 visible)
+[2026-09-16 14:09:47.909] [SplatKit] frame   63  warm   400 it   0.39 min  gaussians    77378  cleaned opacity 139, needle 262, speck 18  advected 0 moved, 77797 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:09:48.381] [SplatKit] exported 77378 gaussians (77378 visible)
+[2026-09-16 14:10:11.106] [SplatKit] frame   64  warm   400 it   0.39 min  gaussians    76991  cleaned opacity 125, needle 244, speck 18  advected 0 moved, 77378 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:10:11.592] [SplatKit] exported 76991 gaussians (76991 visible)
+[2026-09-16 14:10:34.314] [SplatKit] frame   65  warm   400 it   0.39 min  gaussians    76629  cleaned opacity 107, needle 248, speck 7  advected 0 moved, 76991 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:10:34.778] [SplatKit] exported 76629 gaussians (76629 visible)
+[2026-09-16 14:10:57.479] [SplatKit] frame   66  warm   400 it   0.39 min  gaussians    76223  cleaned opacity 122, needle 268, speck 16  advected 0 moved, 76629 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:10:57.960] [SplatKit] exported 76223 gaussians (76223 visible)
+[2026-09-16 14:11:20.592] [SplatKit] frame   67  warm   400 it   0.39 min  gaussians    75843  cleaned opacity 121, needle 244, speck 15  advected 0 moved, 76223 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:11:21.076] [SplatKit] exported 75843 gaussians (75843 visible)
+[2026-09-16 14:11:43.947] [SplatKit] frame   68  warm   400 it   0.39 min  gaussians    75461  cleaned opacity 116, needle 255, speck 11  advected 0 moved, 75843 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:11:44.423] [SplatKit] exported 75461 gaussians (75461 visible)
+[2026-09-16 14:12:07.123] [SplatKit] frame   69  warm   400 it   0.39 min  gaussians    75092  cleaned opacity 104, needle 251, speck 14  advected 0 moved, 75461 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:12:07.588] [SplatKit] exported 75092 gaussians (75092 visible)
+[2026-09-16 14:12:30.257] [SplatKit] frame   70  warm   400 it   0.39 min  gaussians    74697  cleaned opacity 95, needle 281, speck 19  advected 0 moved, 75092 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:12:30.720] [SplatKit] exported 74697 gaussians (74697 visible)
+[2026-09-16 14:12:53.380] [SplatKit] frame   71  warm   400 it   0.39 min  gaussians    74320  cleaned opacity 121, needle 237, speck 19  advected 0 moved, 74697 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:12:53.846] [SplatKit] exported 74320 gaussians (74320 visible)
+[2026-09-16 14:13:16.472] [SplatKit] frame   72  warm   400 it   0.38 min  gaussians    73927  cleaned opacity 113, needle 266, speck 14  advected 0 moved, 74320 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:13:16.937] [SplatKit] exported 73927 gaussians (73927 visible)
+[2026-09-16 14:13:39.602] [SplatKit] frame   73  warm   400 it   0.39 min  gaussians    73558  cleaned opacity 107, needle 245, speck 17  advected 0 moved, 73927 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:13:40.083] [SplatKit] exported 73558 gaussians (73558 visible)
+[2026-09-16 14:14:02.748] [SplatKit] frame   74  warm   400 it   0.39 min  gaussians    73158  cleaned opacity 121, needle 265, speck 14  advected 0 moved, 73558 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:14:03.207] [SplatKit] exported 73158 gaussians (73158 visible)
+[2026-09-16 14:14:25.873] [SplatKit] frame   75  warm   400 it   0.39 min  gaussians    72747  cleaned opacity 106, needle 287, speck 18  advected 0 moved, 73158 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:14:26.322] [SplatKit] exported 72747 gaussians (72747 visible)
+[2026-09-16 14:14:49.151] [SplatKit] frame   76  warm   400 it   0.39 min  gaussians    72363  cleaned opacity 106, needle 259, speck 19  advected 0 moved, 72747 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:14:49.592] [SplatKit] exported 72363 gaussians (72363 visible)
+[2026-09-16 14:15:13.015] [SplatKit] frame   77  warm   400 it   0.40 min  gaussians    71982  cleaned opacity 110, needle 258, speck 13  advected 0 moved, 72363 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:15:13.449] [SplatKit] exported 71982 gaussians (71982 visible)
+[2026-09-16 14:15:37.069] [SplatKit] frame   78  warm   400 it   0.40 min  gaussians    71624  cleaned opacity 114, needle 234, speck 10  advected 0 moved, 71982 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:15:37.502] [SplatKit] exported 71624 gaussians (71624 visible)
+[2026-09-16 14:16:00.906] [SplatKit] frame   79  warm   400 it   0.40 min  gaussians    71269  cleaned opacity 89, needle 249, speck 17  advected 0 moved, 71624 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:16:01.120] [SplatKit] exported 71269 gaussians (71269 visible)
+[2026-09-16 14:16:24.205] [SplatKit] frame   80  warm   400 it   0.39 min  gaussians    70869  cleaned opacity 125, needle 259, speck 16  advected 0 moved, 71269 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:16:24.631] [SplatKit] exported 70869 gaussians (70869 visible)
+[2026-09-16 14:16:47.282] [SplatKit] frame   81  warm   400 it   0.38 min  gaussians    70510  cleaned opacity 101, needle 239, speck 19  advected 0 moved, 70869 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:16:47.712] [SplatKit] exported 70510 gaussians (70510 visible)
+[2026-09-16 14:17:10.340] [SplatKit] frame   82  warm   400 it   0.38 min  gaussians    70176  cleaned opacity 94, needle 221, speck 19  advected 0 moved, 70510 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:17:10.785] [SplatKit] exported 70176 gaussians (70176 visible)
+[2026-09-16 14:17:33.335] [SplatKit] frame   83  warm   400 it   0.38 min  gaussians    69850  cleaned opacity 85, needle 233, speck 8  advected 0 moved, 70176 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:17:33.765] [SplatKit] exported 69850 gaussians (69850 visible)
+[2026-09-16 14:17:56.296] [SplatKit] frame   84  warm   400 it   0.38 min  gaussians    69504  cleaned opacity 92, needle 240, speck 14  advected 0 moved, 69850 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:17:56.727] [SplatKit] exported 69504 gaussians (69504 visible)
+[2026-09-16 14:18:19.280] [SplatKit] frame   85  warm   400 it   0.38 min  gaussians    69228  cleaned opacity 76, needle 182, speck 18  advected 0 moved, 69504 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:18:19.721] [SplatKit] exported 69228 gaussians (69228 visible)
+[2026-09-16 14:18:42.254] [SplatKit] frame   86  warm   400 it   0.38 min  gaussians    68921  cleaned opacity 81, needle 212, speck 14  advected 0 moved, 69228 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:18:42.694] [SplatKit] exported 68921 gaussians (68921 visible)
+[2026-09-16 14:19:05.273] [SplatKit] frame   87  warm   400 it   0.38 min  gaussians    68648  cleaned opacity 53, needle 200, speck 20  advected 0 moved, 68921 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:19:05.720] [SplatKit] exported 68648 gaussians (68648 visible)
+[2026-09-16 14:19:28.306] [SplatKit] frame   88  warm   400 it   0.38 min  gaussians    68371  cleaned opacity 74, needle 184, speck 19  advected 0 moved, 68648 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:19:28.728] [SplatKit] exported 68371 gaussians (68371 visible)
+[2026-09-16 14:19:51.311] [SplatKit] frame   89  warm   400 it   0.38 min  gaussians    68105  cleaned opacity 54, needle 201, speck 11  advected 0 moved, 68371 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:19:51.730] [SplatKit] exported 68105 gaussians (68105 visible)
+[2026-09-16 14:20:14.367] [SplatKit] frame   90  warm   400 it   0.38 min  gaussians    67739  cleaned opacity 83, needle 268, speck 15  advected 0 moved, 68105 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:20:14.791] [SplatKit] exported 67739 gaussians (67739 visible)
+[2026-09-16 14:20:37.388] [SplatKit] frame   91  warm   400 it   0.38 min  gaussians    67340  cleaned opacity 73, needle 307, speck 19  advected 0 moved, 67739 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:20:37.803] [SplatKit] exported 67340 gaussians (67340 visible)
+[2026-09-16 14:21:00.348] [SplatKit] frame   92  warm   400 it   0.38 min  gaussians    66966  cleaned opacity 70, needle 278, speck 26  advected 0 moved, 67340 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:21:00.767] [SplatKit] exported 66966 gaussians (66966 visible)
+[2026-09-16 14:21:23.339] [SplatKit] frame   93  warm   400 it   0.38 min  gaussians    66633  cleaned opacity 60, needle 252, speck 21  advected 0 moved, 66966 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:21:23.747] [SplatKit] exported 66633 gaussians (66633 visible)
+[2026-09-16 14:21:46.269] [SplatKit] frame   94  warm   400 it   0.38 min  gaussians    66246  cleaned opacity 75, needle 292, speck 20  advected 0 moved, 66633 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:21:46.675] [SplatKit] exported 66246 gaussians (66246 visible)
+[2026-09-16 14:22:09.240] [SplatKit] frame   95  warm   400 it   0.38 min  gaussians    65857  cleaned opacity 89, needle 279, speck 21  advected 0 moved, 66246 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:22:09.653] [SplatKit] exported 65857 gaussians (65857 visible)
+[2026-09-16 14:22:33.034] [SplatKit] frame   96  warm   400 it   0.40 min  gaussians    65447  cleaned opacity 73, needle 318, speck 19  advected 0 moved, 65857 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:22:33.450] [SplatKit] exported 65447 gaussians (65447 visible)
+[2026-09-16 14:22:56.283] [SplatKit] frame   97  warm   400 it   0.39 min  gaussians    65024  cleaned opacity 71, needle 325, speck 27  advected 0 moved, 65447 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:22:56.692] [SplatKit] exported 65024 gaussians (65024 visible)
+[2026-09-16 14:23:19.213] [SplatKit] frame   98  warm   400 it   0.38 min  gaussians    64612  cleaned opacity 70, needle 327, speck 15  advected 0 moved, 65024 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:23:19.612] [SplatKit] exported 64612 gaussians (64612 visible)
+[2026-09-16 14:23:42.101] [SplatKit] frame   99  warm   400 it   0.38 min  gaussians    64259  cleaned opacity 61, needle 276, speck 16  advected 0 moved, 64612 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:23:42.501] [SplatKit] exported 64259 gaussians (64259 visible)
+[2026-09-16 14:24:05.026] [SplatKit] frame  100  warm   400 it   0.38 min  gaussians    63904  cleaned opacity 58, needle 278, speck 19  advected 0 moved, 64259 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:24:05.415] [SplatKit] exported 63904 gaussians (63904 visible)
+[2026-09-16 14:24:27.902] [SplatKit] frame  101  warm   400 it   0.38 min  gaussians    63574  cleaned opacity 57, needle 254, speck 19  advected 0 moved, 63904 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:24:28.323] [SplatKit] exported 63574 gaussians (63574 visible)
+[2026-09-16 14:24:50.840] [SplatKit] frame  102  warm   400 it   0.38 min  gaussians    63159  cleaned opacity 48, needle 350, speck 17  advected 0 moved, 63574 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:24:51.233] [SplatKit] exported 63159 gaussians (63159 visible)
+[2026-09-16 14:25:13.748] [SplatKit] frame  103  warm   400 it   0.38 min  gaussians    62810  cleaned opacity 51, needle 284, speck 14  advected 0 moved, 63159 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:25:14.127] [SplatKit] exported 62810 gaussians (62810 visible)
+[2026-09-16 14:25:36.598] [SplatKit] frame  104  warm   400 it   0.38 min  gaussians    62453  cleaned opacity 68, needle 269, speck 20  advected 0 moved, 62810 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:25:36.980] [SplatKit] exported 62453 gaussians (62453 visible)
+[2026-09-16 14:25:59.453] [SplatKit] frame  105  warm   400 it   0.38 min  gaussians    62155  cleaned opacity 41, needle 243, speck 14  advected 0 moved, 62453 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:25:59.838] [SplatKit] exported 62155 gaussians (62155 visible)
+[2026-09-16 14:26:22.343] [SplatKit] frame  106  warm   400 it   0.38 min  gaussians    61805  cleaned opacity 38, needle 286, speck 26  advected 0 moved, 62155 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:26:22.719] [SplatKit] exported 61805 gaussians (61805 visible)
+[2026-09-16 14:26:45.157] [SplatKit] frame  107  warm   400 it   0.38 min  gaussians    61489  cleaned opacity 41, needle 255, speck 20  advected 0 moved, 61805 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:26:45.555] [SplatKit] exported 61489 gaussians (61489 visible)
+[2026-09-16 14:27:07.999] [SplatKit] frame  108  warm   400 it   0.38 min  gaussians    61199  cleaned opacity 40, needle 234, speck 16  advected 0 moved, 61489 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:27:08.391] [SplatKit] exported 61199 gaussians (61199 visible)
+[2026-09-16 14:27:30.836] [SplatKit] frame  109  warm   400 it   0.38 min  gaussians    60917  cleaned opacity 39, needle 223, speck 20  advected 0 moved, 61199 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:27:31.210] [SplatKit] exported 60917 gaussians (60917 visible)
+[2026-09-16 14:27:53.714] [SplatKit] frame  110  warm   400 it   0.38 min  gaussians    60623  cleaned opacity 27, needle 246, speck 21  advected 0 moved, 60917 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:27:54.099] [SplatKit] exported 60623 gaussians (60623 visible)
+[2026-09-16 14:28:16.745] [SplatKit] frame  111  warm   400 it   0.38 min  gaussians    60294  cleaned opacity 42, needle 265, speck 22  advected 0 moved, 60623 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:28:17.133] [SplatKit] exported 60294 gaussians (60294 visible)
+[2026-09-16 14:28:39.527] [SplatKit] frame  112  warm   400 it   0.38 min  gaussians    59975  cleaned opacity 42, needle 256, speck 21  advected 0 moved, 60294 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:28:39.906] [SplatKit] exported 59975 gaussians (59975 visible)
+[2026-09-16 14:29:02.239] [SplatKit] frame  113  warm   400 it   0.38 min  gaussians    59643  cleaned opacity 37, needle 270, speck 25  advected 0 moved, 59975 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:29:02.615] [SplatKit] exported 59643 gaussians (59643 visible)
+[2026-09-16 14:29:24.822] [SplatKit] frame  114  warm   400 it   0.38 min  gaussians    59227  cleaned opacity 50, needle 339, speck 27  advected 0 moved, 59643 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:29:25.205] [SplatKit] exported 59227 gaussians (59227 visible)
+[2026-09-16 14:29:47.969] [SplatKit] frame  115  warm   400 it   0.39 min  gaussians    58779  cleaned opacity 73, needle 344, speck 31  advected 0 moved, 59227 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:29:48.356] [SplatKit] exported 58779 gaussians (58779 visible)
+[2026-09-16 14:30:11.680] [SplatKit] frame  116  warm   400 it   0.40 min  gaussians    58393  cleaned opacity 49, needle 315, speck 22  advected 0 moved, 58779 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:30:12.041] [SplatKit] exported 58393 gaussians (58393 visible)
+[2026-09-16 14:30:34.299] [SplatKit] frame  117  warm   400 it   0.38 min  gaussians    58047  cleaned opacity 60, needle 263, speck 23  advected 0 moved, 58393 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:30:34.666] [SplatKit] exported 58047 gaussians (58047 visible)
+[2026-09-16 14:30:56.745] [SplatKit] frame  118  warm   400 it   0.37 min  gaussians    57671  cleaned opacity 47, needle 311, speck 18  advected 0 moved, 58047 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:30:57.086] [SplatKit] exported 57671 gaussians (57671 visible)
+[2026-09-16 14:31:19.516] [SplatKit] frame  119  warm   400 it   0.38 min  gaussians    57299  cleaned opacity 45, needle 302, speck 25  advected 0 moved, 57671 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:31:19.795] [SplatKit] exported 57299 gaussians (57299 visible)
+[2026-09-16 14:31:42.353] [SplatKit] frame  120  warm   400 it   0.38 min  gaussians    56954  cleaned opacity 42, needle 274, speck 29  advected 0 moved, 57299 stayed, 0 parts, 0.0 cm max  refine still
+[2026-09-16 14:31:42.598] [SplatKit] exported 56954 gaussians (56954 visible)
+[2026-09-16 14:31:46.367] [SplatKit] preview clip -> C:\Users\HP\Apps\ComfyUI\output\my_shot\preview.mp4
+[2026-09-16 14:31:46.370] [SplatKit] done: 121 frame(s) in 95.3 min -> C:\Users\HP\Apps\ComfyUI\output\my_shot
+[2026-09-16 14:33:15.398] Prompt executed in 20:55:31

@@ -1,0 +1,18 @@
+########## 1/4  4DAnyone generator (15.5 GB) ##########
+warning: Failed to set cwd to temp dir
+Hint: A new version of huggingface_hub (1.31.0) is available! You are using version 1.28.0.
+To update, run: hf update
+Hint: The `hf-cli` skill is not installed. Run `hf skills add -g --claude` to teach your AI agents how to use the `hf` CLI.
+C:\Users\HP\anaconda3\envs\comfyui\Lib\site-packages\huggingface_hub\cli\download.py:158: UserWarning: Ignoring `--include` since filenames have been explicitly set.
+  warnings.warn("Ignoring `--include` since filenames have been explicitly set.")
+path=C:\Users\HP\Apps\ComfyUI\models\splatkit
+########## 2/4  VGG-19 perceptual ##########
+warning: Failed to set cwd to temp dir
+path=C:\Users\HP\AppData\Local\Temp\claude\C--Users-HP-Documents-Claude\a1e36c92-11cc-47d8-998a-ba155c9d371d\scratchpad\hfdl\vgg
+########## 3/4  BiRefNet ##########
+C:\Users\HP\anaconda3\envs\comfyui\Lib\site-packages\huggingface_hub\cli\download.py:158: UserWarning: Ignoring `--include` since filenames have been explicitly set.
+  warnings.warn("Ignoring `--include` since filenames have been explicitly set.")
+path=C:\Users\HP\Apps\ComfyUI\models\splatkit\birefnet
+########## 4/4  SAM 3D Body ##########
+path=C:\Users\HP\Apps\ComfyUI\models
+########## ALL MODEL DOWNLOADS COMPLETE ##########

@@ -1,0 +1,26 @@
+=== BACKEND EXITED at 2026-09-16 12:49:02 (generation node done) ===
+[2026-09-16 12:09:18.822] [SplatKit] 2026-09-16 12:09:18,418 | INFO | Publishing target camera 01
+[2026-09-16 12:12:06.896] [SplatKit] 2026-09-16 12:12:06,895 | INFO | Publishing target camera 02
+[2026-09-16 12:14:55.620] [SplatKit] 2026-09-16 12:14:55,265 | INFO | Publishing target camera 03
+[2026-09-16 12:17:43.495] [SplatKit] 2026-09-16 12:17:43,495 | INFO | Publishing target camera 04
+[2026-09-16 12:20:31.757] [SplatKit] 2026-09-16 12:20:31,757 | INFO | Publishing target camera 05
+[2026-09-16 12:23:21.004] [SplatKit] 2026-09-16 12:23:20,630 | INFO | Publishing target camera 06
+[2026-09-16 12:26:15.326] [SplatKit] 2026-09-16 12:26:15,325 | INFO | Publishing target camera 07
+[2026-09-16 12:29:08.748] [SplatKit] 2026-09-16 12:29:08,373 | INFO | Publishing target camera 08
+[2026-09-16 12:32:02.054] [SplatKit] 2026-09-16 12:32:02,054 | INFO | Publishing target camera 09
+[2026-09-16 12:34:52.253] [SplatKit] 2026-09-16 12:34:52,242 | INFO | Publishing target camera 10
+[2026-09-16 12:37:41.237] [SplatKit] 2026-09-16 12:37:41,236 | INFO | Publishing target camera 11
+[2026-09-16 12:40:30.425] [SplatKit] 2026-09-16 12:40:30,248 | INFO | Publishing target camera 12
+[2026-09-16 12:43:19.315] [SplatKit] 2026-09-16 12:43:19,315 | INFO | Publishing target camera 13
+[2026-09-16 12:46:08.481] [SplatKit] 2026-09-16 12:46:08,303 | INFO | Publishing target camera 14
+[2026-09-16 12:48:57.428] [SplatKit] 2026-09-16 12:48:57,428 | INFO | Publishing target camera 15
+[2026-09-16 12:48:59.378] [SplatKit] attention_backend:              sdpa
+[2026-09-16 12:48:59.378] [SplatKit] num_rcp_videos:                 4
+[2026-09-16 12:48:59.378] [SplatKit] num_target_videos:              16
+[2026-09-16 12:48:59.378] [SplatKit] fps:                            25/1
+[2026-09-16 12:48:59.379] [SplatKit] peak_vram_allocated_bytes:      25833051582
+[2026-09-16 12:48:59.379] [SplatKit] peak_vram_reserved_bytes:       29964107776
+[2026-09-16 12:48:59.379] [SplatKit] total_pipeline_elapsed_seconds: 68963.266
+[2026-09-16 12:48:59.379] [SplatKit] result_dir:                     C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\fdanyone\8066962-sd_540_960_25fps@r8e9a3c926f
+[2026-09-16 12:48:59.380] [SplatKit] motion_dir:                     C:\Users\HP\Apps\ComfyUI\output\splatkit\4danyone\220ba479c4\clip_46caf6b86019_e26092d28fa2_4876ecbae5c5_59fa45200c50\pose\results\8066962-sd_540_960_25fps
+[2026-09-16 12:49:00.947] [SplatKit] exporting frames 0:120 of 8066962-sd_540_960_25fps@r8e9a3c926f -> C:\Users\HP\Apps\ComfyUI\output\splatkit\framesets\8066962-sd_540_960_25fps@r8e9a3c926f
